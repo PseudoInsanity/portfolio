@@ -1,0 +1,12 @@
+{
+  "name": "edmirsuljic_portfolio",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd ./client && npm run start",
+    "build": "react-scripts b uild",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
+}
