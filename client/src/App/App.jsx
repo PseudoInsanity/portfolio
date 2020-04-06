@@ -14,7 +14,7 @@ const App = () => {
         <ThemeProvider theme={darkTheme}>
             <CssBaseline />
             <Home />
-            <Fade >
+            <Fade unMountOnExit={true} >
                 <About />
                 <Projects />
                 <Contact />

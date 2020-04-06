@@ -6,7 +6,6 @@ import { Typography } from '@material-ui/core';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-
 import Fade from 'react-reveal';
 
 const Skills = () => {
@@ -22,29 +21,28 @@ const Skills = () => {
                     </Fade>
                 </Grid>
             </Grid>
+            <List >
 
-            <Grid justify="center" alignItems="center" container item xs={12} >
-                <List dense>
+                <Grid container spacing={3}>
                     {skills.map((skill, index) =>
                         <ListItem key={index} >
-                            <Typography variant="body2">{skill.type}</Typography>
-                            <BorderLinearProgress
-                                style={{ margin: '4px', marginBottom: '20px', marginTop: '20px' }}
-                                variant="determinate"
-                                color="secondary"
-                                value={skill.level}
-                            >
-                            </BorderLinearProgress>
-
-                            <ListItemText
-                                secondary={`${skill.level}%`}
-                            />
-
+                            <Grid item xs={3}>
+                                <Typography style={{ paddingLeft: '10px' }} variant="h6">{skill.type}</Typography>
+                            </Grid>
+                            <Grid item xs={7}>
+                                <BorderLinearProgress
+                                    style={{ margin: '4px', marginBottom: '20px', marginTop: '20px' }}
+                                    variant="determinate"
+                                    color="secondary"
+                                    value={skill.level} />
+                            </Grid>
+                            <Grid item >
+                                <Typography variant="h6">{skill.level}%</Typography>
+                            </Grid>
                         </ListItem>
                     )}
-
-                </List>
-            </Grid>
+                </Grid>
+            </List>
         </Paper >
 
     )

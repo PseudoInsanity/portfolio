@@ -23,7 +23,7 @@ const Buttonbase = () => {
                 <span className={classes.imageButton}>
                     <Typography
                         component="span"
-                        variant="body1"
+                        variant="h3"
                         color="inherit"
                         className={classes.imageTitle}
                     >

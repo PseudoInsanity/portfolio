@@ -9,11 +9,17 @@ const theme = createMuiTheme({
       light: '#f0fdff', 
     },
     secondary: {
-      main: '#32615c', // Dark Green
-      light: '#bad29f', //Yellog
+      main: '#32615c', 
+      light: '#e5e059', 
+    },
+    paper: {
+      primary: '#6290c3', //Silver Lake Blue
+      secondary: '#96ddd6', // Medium aquamarine
+      penis: '#d8f9ff' ,//Light Cyan
+      accent: '#073b3a' , //Rich Black
     },
     background: {
-      default: '#f4fcfb',
+      default: '#f0fdff',
     },
     error: {
       main: '#DC3545', // material error
@@ -41,12 +47,17 @@ const theme = createMuiTheme({
     //BODY
     body1: {
       fontFamily: 'Gotham Pro',
-      fontSize: 35
+      fontSize: 25
     },
     body2: {
       fontFamily: 'Gotham Pro',
       fontSize: 16
     },
+    body3: {
+      fontFamily: 'Gotham Pro',
+      fontSize: 35
+    },
+
     // HEADERS
     h1: {
       fontFamily: 'Gotham Pro',
@@ -64,6 +75,11 @@ const theme = createMuiTheme({
     h5: {
       fontFamily: 'Montserrat',
       fontWeight: 800,
+    },
+    h6: {
+      fontFamily: 'Gotham Pro',
+      fontWeight: 650,
+      fontSize: 25
     },
     textFields: {
       fontWeight: '400',

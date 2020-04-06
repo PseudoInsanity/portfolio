@@ -19,15 +19,7 @@ const useStyles = makeStyles((theme) => ({
     title: {
         color: theme.palette.primary.light
     },
-    background: {
-        position: 'absolute',
-        backgroundImage: `url(${BackgroundImage})`,
-        top: 0,
-        left: 0,
-        bottom: 0,
-        right: 0,
-        height: '1000px'
-    }
+  
 
 }));
 

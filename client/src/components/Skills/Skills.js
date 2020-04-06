@@ -4,7 +4,8 @@ import LinearProgress from '@material-ui/core/LinearProgress';
 
 const useStyles = makeStyles((theme) => ({
     paper: {
-        background: theme.palette.secondary.light,
+        backgroundColor: theme.palette.paper.secondary,
+        color: theme.palette.paper.accent,
         height: '650px',
         width: '65%'
     },
@@ -13,10 +14,6 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center'
     },
     bodyGrid: {
-        display: 'flex',
-        justifyContent: 'start',
-        alignItems: 'flex-end',
-        paddingLeft: '10px'
     },
     title: {
         margin: theme.spacing(1),
@@ -38,22 +35,23 @@ const useStyles = makeStyles((theme) => ({
 
 const BorderLinearProgress = withStyles({
     root: {
-        width: 500,
-        height: 25,
-        borderRadius: 10,
-        backgroundColor: lighten('#ff6c5c', 0.5),
+        width: 340,
+        height: 31,
+        borderRadius: 3,
+        backgroundColor: lighten('#32615c', 1),
+
     },
     bar: {
-        borderRadius: 10,
-        backgroundColor: '#ff6c5c'
+        borderRadius: 3,
+        backgroundColor: '#32615c'
     },
 })(LinearProgress);
 
 const SKILLS = [
     { type: "Java", level: 90 },
-    { type: "HTML", level: 60 },
+    { type: "HTML", level: 65 },
+    { type: "Javascript", level: 50 },
     { type: "React", level: 40 },
-    { type: "Javascript", level: 45 },
     { type: "Git", level: 65 },
     { type: "Android", level: 70 },
 ];
