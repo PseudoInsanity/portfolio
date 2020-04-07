@@ -11,7 +11,7 @@ export const TopBar = (props) => {
 
     return (
 
-        <AppBar position="static">
+        <AppBar elevation={0} position="sticky" className={classes.appBar}> 
             <Toolbar variant="dense" className={classes.root}>
                 <Link
                     activeClass="active"

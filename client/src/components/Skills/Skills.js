@@ -10,7 +10,6 @@ const useStyles = makeStyles((theme) => ({
         width: '65%'
     },
     grid: {
-        display: 'flex',
         justifyContent: 'center'
     },
     bodyGrid: {
@@ -35,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
 
 const BorderLinearProgress = withStyles({
     root: {
-        width: 340,
+        width: '100%',
         height: 31,
         borderRadius: 3,
         backgroundColor: lighten('#32615c', 1),
@@ -47,7 +46,7 @@ const BorderLinearProgress = withStyles({
     },
 })(LinearProgress);
 
-const SKILLS = [
+const skills = [
     { type: "Java", level: 90 },
     { type: "HTML", level: 65 },
     { type: "Javascript", level: 50 },
@@ -56,4 +55,4 @@ const SKILLS = [
     { type: "Android", level: 70 },
 ];
 
-export { useStyles, SKILLS, BorderLinearProgress };
+export { useStyles, skills, BorderLinearProgress };

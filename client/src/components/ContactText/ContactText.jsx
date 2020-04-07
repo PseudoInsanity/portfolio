@@ -5,57 +5,47 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import EmailIcon from '@material-ui/icons/Email';
 import PhoneIcon from '@material-ui/icons/Phone';
-import Buttonbase from '../Buttonbase/Buttonbase.jsx';
-import Box from '@material-ui/core/Box';
-import ProfileImage from '../../img/edmir.png';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-
-
-
-
 
 const Header = () => {
     const classes = useStyles();
     return (
 
 
-        <Grid direction="column" container item xs={12} justify="center" alignItems="center">
-            <Typography className={classes.title} variant="h1">Contact me</Typography>
-            <hr style={{ color: '#f0fdff', backgroundColor: '#f0fdff', height: 5, width: '5%' }}></hr>
 
-            <Grid item container direction="row">
 
-                <Grid direction="column" item xs={6} container justify="center" alignItems="flex-end">
-                    <Avatar style={{ width: '60px', height: '60px' }} className={classes.avatar}>
-                        <EmailIcon style={{ width: '40px', height: '40px' }} />
-                    </Avatar>
+        <Grid item container direction="row">
 
-                    <Avatar style={{ width: '60px', height: '60px' }} className={classes.avatar}>
-                        <PhoneIcon style={{ width: '40px', height: '40px' }} />
-                    </Avatar>
+            <Grid direction="column" item xs={6} container justify="center" alignItems="flex-end">
+                <Avatar style={{ width: '60px', height: '60px' }} className={classes.avatar}>
+                    <EmailIcon style={{ width: '40px', height: '40px' }} />
+                </Avatar>
 
-                    <Avatar style={{ width: '60px', height: '60px' }} className={classes.avatar}>
-                        <GitHubIcon style={{ width: '40px', height: '40px' }} />
-                    </Avatar>
+                <Avatar style={{ width: '60px', height: '60px' }} className={classes.avatar}>
+                    <PhoneIcon style={{ width: '40px', height: '40px' }} />
+                </Avatar>
 
-                    <Avatar style={{ width: '60px', height: '60px' }} className={classes.avatar}>
-                        <LinkedInIcon style={{ width: '40px', height: '40px' }} />
-                    </Avatar>
-                </Grid>
+                <Avatar style={{ width: '60px', height: '60px' }} className={classes.avatar}>
+                    <GitHubIcon style={{ width: '40px', height: '40px' }} />
+                </Avatar>
 
-                <Grid direction="column" item xs={6} container justify="space-evenly" alignItems="flex-start">
-                    <Typography variant="h6"> edmir_2@live.se</Typography>
-
-                    <Typography variant="h6">+46736910611</Typography>
-
-                    <Typography variant="h6">Pseudo Insanity</Typography>
-
-                    <Typography variant="h6">Edmir Suljic</Typography>
-                </Grid>
+                <Avatar style={{ width: '60px', height: '60px' }} className={classes.avatar}>
+                    <LinkedInIcon style={{ width: '40px', height: '40px' }} />
+                </Avatar>
             </Grid>
 
+            <Grid direction="column" item xs={6} container justify="space-evenly" alignItems="flex-start">
+                <Typography variant="h6"> edmir_2@live.se</Typography>
+
+                <Typography variant="h6">+46736910611</Typography>
+
+                <Typography variant="h6">Pseudo Insanity</Typography>
+
+                <Typography variant="h6">Edmir Suljic</Typography>
+            </Grid>
         </Grid>
+
     )
 }
 

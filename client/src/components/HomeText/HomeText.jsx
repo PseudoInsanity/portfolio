@@ -3,7 +3,6 @@ import { useStyles } from './HomeText.js';
 import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import Buttonbase from '../Buttonbase/Buttonbase.jsx';
 import Box from '@material-ui/core/Box';
 import ProfileImage from '../../img/edmir.png';
 
@@ -23,7 +22,7 @@ const Header = () => {
                 <Box width="40%">
                     <Typography className={classes.text} variant="body1">My name is Edmir Suljic and I am a newly graduated Computer Scientist who is eager to learn new things and to start my journey.</Typography>
                 </Box>
-                <Buttonbase />
+             
             </Grid>
             {/* <Particles
                 params={{

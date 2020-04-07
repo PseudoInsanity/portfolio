@@ -30,7 +30,7 @@ const ProjectsTimeline = () => {
 
 
     return (
-        <Grid className={classes.root} item container xs={10}>
+        <Grid className={classes.root} item xs={10}>
 
             <Stepper className={classes.root} activeStep={activeStep} orientation="vertical">
                 {steps.map((label, index) => (
@@ -74,9 +74,11 @@ const ProjectsTimeline = () => {
                         smooth={true}
                         offset={0}
                         duration={500}>
-                        <Button><Typography variant="body2">Contact me</Typography></Button>
+                        <Button 
+                        ><Typography className={classes.button} variant="body2">Contact me</Typography></Button>
                     </Link>
                     <Button
+                        className={classes.button}
                         onClick={handleReset}
                     >Show all projects!</Button>
                 </Paper>

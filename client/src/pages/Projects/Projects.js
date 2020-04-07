@@ -1,14 +1,17 @@
 import makeStyles from '@material-ui/core/styles/makeStyles';
 
 const useStyles =  makeStyles((theme) => ({
-    
+    rootGrid: {
+
+        paddingTop: theme.spacing(7),
+        paddingBottom: theme.spacing(2),
+    },
     title: {
-        margin: theme.spacing(2),
         color: theme.palette.primary.light
     },
     background: {
         backgroundColor: theme.palette.secondary.main,
-        height: '100vh',
+        minHeight: '100vh'
     }
 }));
 

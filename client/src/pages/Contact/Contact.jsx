@@ -3,6 +3,8 @@ import { useStyles } from './Contact.js';
 import TopBar from '../../components/TopBar/TopBar.jsx';
 import ContactText from '../../components/ContactText/ContactText.jsx';
 import Particles from 'react-particles-js';
+import Typography from '@material-ui/core/Typography';
+import { Grid } from '@material-ui/core';
 
 
 const Contact = () => {
@@ -10,9 +12,16 @@ const Contact = () => {
 
     return (
         <div className={classes.background} id="contact">
-            <TopBar style={{ backgroundColor: '#32615c' }} />
+            <Grid direction="column" container item xs={12} justify="center" alignItems="center" className={classes.rootGrid}>
+                <Typography className={classes.title} variant="h1">Contact me</Typography>
+                <hr style={{ color: '#f0fdff', backgroundColor: '#f0fdff', height: 5, width: '5%' }}></hr>
 
-            <ContactText />
+            </Grid>
+            <Grid>
+                <ContactText />
+            </Grid>
+
+
             {/* </div>
                     <Particles
                         params={{
