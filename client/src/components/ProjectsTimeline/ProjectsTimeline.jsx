@@ -25,12 +25,12 @@ const ProjectsTimeline = () => {
     };
 
     const handleReset = () => {
-        setActiveStep();
+        setActiveStep(0);
     };
 
 
     return (
-        <Grid className={classes.root} item xs={10}>
+        <Grid className={classes.root} item xs={12}>
 
             <Stepper className={classes.root} activeStep={activeStep} orientation="vertical">
                 {steps.map((label, index) => (
@@ -39,7 +39,7 @@ const ProjectsTimeline = () => {
                         <StepContent>
                             <Typography variant="h5">{getStepTitle(index)}</Typography>
                             <Typography variant="body1">{getStepContent(index)}</Typography>
-                            <Typography variant="body2">Github link: {getGithubLink(index) === 'Not applicable' ? 'Not applicable' : <Link color="inherit" href={getGithubLink(index)}>{getGithubLink(index)}</Link>}
+                            <Typography variant="body2">Github link: {getGithubLink(index) === 'Not applicable' ? 'Not applicable' : <Link variant="body2" href={getGithubLink(index)}>{getGithubLink(index)}</Link>}
                             </Typography>
                             <div className={classes.actionsContainer}>
                                 <div>
@@ -74,13 +74,18 @@ const ProjectsTimeline = () => {
                         smooth={true}
                         offset={0}
                         duration={500}>
-                        <Button 
-                        ><Typography className={classes.button} variant="body2">Contact me</Typography></Button>
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            className={classes.button}>
+                            Contact me
+                        </Button>
                     </Link>
                     <Button
+                        variant="contained"
                         className={classes.button}
-                        onClick={handleReset}
-                    >Show all projects!</Button>
+                        color="primary"
+                        onClick={handleReset}>Go through projects again!</Button>
                 </Paper>
             )}
         </Grid>

@@ -6,6 +6,9 @@ const useStyles = makeStyles((theme) => ({
         margin: theme.spacing(1),
     },
     grid: {
+        padding: theme.spacing(2)
+    },
+    leftGrid: {
         margin: theme.spacing(2)
     },
     text: {

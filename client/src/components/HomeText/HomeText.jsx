@@ -19,7 +19,7 @@ const Header = () => {
             <Grid direction="column" container item xs={12} justify="center" alignItems="center">
                 <Avatar style={{ width: '250px', height: '250px' }} className={classes.avatar} alt="Edmir Suljic" src={ProfileImage} />
                 <Typography className={classes.title} variant="h1">Edmir Suljic</Typography>
-                <Box width="40%">
+                <Box width="30%">
                     <Typography className={classes.text} variant="body1">My name is Edmir Suljic and I am a newly graduated Computer Scientist who is eager to learn new things and to start my journey.</Typography>
                 </Box>
              

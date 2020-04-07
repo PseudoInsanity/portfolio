@@ -18,13 +18,13 @@ const Skills = () => {
                 </Fade>
             </Grid>
             <List >
-                <Grid container item xs={12} spacing={3}>
+                <Grid justify="center" alignItems="center" container item xs={12} spacing={3}>
                     {skills.map((skill, index) =>
                         <ListItem key={index} >
-                            <Grid item xs={6}>
+                            <Grid item xs={3}>
                                 <Typography style={{ paddingLeft: '10px' }} variant="h6">{skill.type}</Typography>
                             </Grid>
-                            <Grid item xs={6} justify="flex-start" alignItems="center">
+                            <Grid item xs={7} justify="center" alignItems="center">
                                 <BorderLinearProgress
                                     style={{ marginBottom: '20px', marginTop: '20px'}}
                                     variant="determinate"

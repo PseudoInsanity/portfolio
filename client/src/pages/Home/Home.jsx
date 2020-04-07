@@ -1,7 +1,5 @@
 import React from 'react';
 import HomeText from '../../components/HomeText/HomeText.jsx';
-import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container'
 import Buttonbase from '../../components/Buttonbase/Buttonbase.jsx';
 import Particles from 'react-particles-js';
 import { useStyles } from './Home.js';

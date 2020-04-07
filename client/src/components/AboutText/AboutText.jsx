@@ -23,7 +23,7 @@ const AboutText = () => {
                     <br />
                     <strong>Why choose me?</strong>
                     <br />
-                        Although I'm not remotely the greatest coder, I do take a lot of pride in my curiosity, and as my own biggest critic, I always wish to improve myself.
+                        Although I'm not a very experienced coder, I do take a lot of pride in my curiosity, and as my own biggest critic, I always wish to improve myself.
                     </Typography>
 
             </Grid>

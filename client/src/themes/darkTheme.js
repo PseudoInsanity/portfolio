@@ -5,18 +5,17 @@ const theme = createMuiTheme({
   palette: {
     type: 'dark',
     primary: {
-      main: '#242325', // Raisin Black
+      main: '#242325', 
       light: '#f0fdff', 
     },
     secondary: {
-      main: '#32615c', 
-      light: '#e5e059', 
+      main: '#4b8e4d', 
+      light: '#82d173', 
     },
     paper: {
-      primary: '#6290c3', //Silver Lake Blue
-      secondary: '#96ddd6', // Medium aquamarine
-      penis: '#d8f9ff' ,//Light Cyan
-      accent: '#073b3a' , //Rich Black
+      primary: '#04c960', 
+      secondary: '#46af49',
+      accent: '#073b3a' , 
     },
     background: {
       default: '#f0fdff',
