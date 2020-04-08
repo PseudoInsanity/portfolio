@@ -24,7 +24,7 @@ const Skills = () => {
                             <Grid item xs={3}>
                                 <Typography style={{ paddingLeft: '10px' }} variant="h6">{skill.type}</Typography>
                             </Grid>
-                            <Grid item xs={7} justify="center" alignItems="center">
+                            <Grid container item xs={7} justify="center" alignItems="center">
                                 <BorderLinearProgress
                                     style={{ marginBottom: '20px', marginTop: '20px'}}
                                     variant="determinate"

@@ -1,11 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import Avatar from '@material-ui/core/Avatar';
-import BathtubIcon from '@material-ui/icons/Bathtub';
-import Zoom from 'react-reveal/Zoom';
 import Typography from '@material-ui/core/Typography';
-import AudiotrackIcon from '@material-ui/icons/Audiotrack';
-import GroupIcon from '@material-ui/icons/Group';
 import { useStyles } from './AboutText';
 
 const AboutText = () => {

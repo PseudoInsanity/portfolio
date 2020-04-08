@@ -7,7 +7,10 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: theme.palette.secondary.main,
         color: theme.palette.primary.light,
         height: '650px',
-        width: '65%'
+        width: '65%',
+        "@media (max-width: 600px)": {
+            width: "100%",
+        }
     },
     grid: {
         justifyContent: 'center'
@@ -48,7 +51,7 @@ const BorderLinearProgress = withStyles((theme) => ({
 const skills = [
     { type: "Java", level: 90 },
     { type: "HTML", level: 65 },
-    { type: "Javascript", level: 50 },
+    { type: "JS", level: 50 },
     { type: "React", level: 40 },
     { type: "Git", level: 65 },
     { type: "Android", level: 70 },

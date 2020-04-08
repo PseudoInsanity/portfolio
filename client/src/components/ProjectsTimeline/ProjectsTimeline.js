@@ -69,11 +69,11 @@ function getGithubLink(step) {
             return `https://github.com/PseudoInsanity/rent-a-butler`;
         case 2:
             return `Not applicable`;
-        case 2:
-            return `https://github.com/mmadrus/HouseServer`;
         case 3:
-            return `https://github.com/mmadrus/Aasfalis`;
+            return `https://github.com/mmadrus/HouseServer`;
         case 4:
+            return `https://github.com/mmadrus/Aasfalis`;
+        case 5:
             return `Not applicable`;
     }
 }

@@ -14,7 +14,6 @@ const ProjectsTimeline = () => {
     const classes = useStyles();
     const [activeStep, setActiveStep] = useState(0);
     const steps = getSteps();
-    const preventDefault = (event) => event.preventDefault();
 
     const handleNext = () => {
         setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -67,6 +66,7 @@ const ProjectsTimeline = () => {
             {activeStep === steps.length && (
                 <Paper square elevation={0} className={classes.resetContainer}>
                     <Typography>Thats most of the projects I've been involved with!</Typography>
+                    {/* eslint-disable-next-line no-console */}
                     <Link
                         activeClass="active"
                         to="contact"

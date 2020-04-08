@@ -19,7 +19,19 @@ const useStyles =  makeStyles((theme) => ({
     title: {
         margin: theme.spacing(2),
         color: theme.palette.primary.main
-    }
+    },
+    content: {
+        display: "flex",
+        flexDirection: "row",
+        "@media (max-width: 600px)": {
+          flexDirection: "column"
+        }
+      },
+      aboutContent: {
+        "@media (max-width: 600px)": {
+          maxWidth: "100%"
+        }
+      }
 }));
 
 export {useStyles};

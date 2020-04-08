@@ -5,24 +5,22 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import ProfileImage from '../../img/edmir.png';
+//import Particles from 'react-particles-js';
 
-import Particles from 'react-particles-js';
 
-
-const Header = () => {
+const HomeText = () => {
     const classes = useStyles();
     return (
-
-            <Grid item xs={12}>
-                
-          
+        <Grid item xs={12}>
             <Grid direction="column" container item xs={12} justify="center" alignItems="center">
                 <Avatar style={{ width: '250px', height: '250px' }} className={classes.avatar} alt="Edmir Suljic" src={ProfileImage} />
                 <Typography className={classes.title} variant="h1">Edmir Suljic</Typography>
-                <Box width="30%">
-                    <Typography className={classes.text} variant="body1">My name is Edmir Suljic and I am a newly graduated Computer Scientist who is eager to learn new things and to start my journey.</Typography>
+                <Box className={classes.box}>
+                    <Typography className={classes.text} variant="body1">
+                        My name is Edmir Suljic and I am a newly graduated Computer
+                        Scientist who is eager to learn new things and to start my journey.
+                    </Typography>
                 </Box>
-             
             </Grid>
             {/* <Particles
                 params={{
@@ -76,11 +74,11 @@ const Header = () => {
                         }
                     }
                 }} /> */}
-            </Grid>
-            
-         
+        </Grid>
+
+
 
     )
 }
 
-export default Header;
+export default HomeText;

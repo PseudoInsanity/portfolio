@@ -1,15 +1,12 @@
 import makeStyles from '@material-ui/core/styles/makeStyles';
 
 const useStyles = makeStyles((theme) => ({
-    avatar: {
-      margin: theme.spacing(3),
-    },
     text: {
         color: theme.palette.primary.main,
         padding: theme.spacing(1),
     },
     avatar: {
-        margin: theme.spacing(5),
+        margin: theme.spacing(3),
         backgroundColor: theme.palette.secondary.main
     },
     avatarTitle: {

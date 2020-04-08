@@ -1,9 +1,8 @@
 import React from 'react';
 import { useStyles } from './Contact.js';
-import TopBar from '../../components/TopBar/TopBar.jsx';
-import ContactText from '../../components/ContactText/ContactText.jsx';
-import Particles from 'react-particles-js';
+import ContactAvatars from '../../components/ContactAvatars/ContactAvatars.jsx';
 import Typography from '@material-ui/core/Typography';
+import ContactForm from '../../components/ContactForm/ContactForm.jsx';
 import { Grid } from '@material-ui/core';
 
 
@@ -15,12 +14,12 @@ const Contact = () => {
             <Grid direction="column" container item xs={12} justify="center" alignItems="center" className={classes.rootGrid}>
                 <Typography className={classes.title} variant="h1">Contact me</Typography>
                 <hr style={{ color: '#04c960', backgroundColor: '#04c960', height: 5, width: '15%' }}></hr>
-
+                <ContactForm />
             </Grid>
             <Grid>
-                <ContactText />
+                <hr style={{ color: '#04c960', backgroundColor: '#04c960', height: 5, width: '90%', marginTop: '50px' }}></hr>
+                <ContactAvatars />
             </Grid>
-
 
             {/* </div>
                     <Particles

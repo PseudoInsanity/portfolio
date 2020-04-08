@@ -16,8 +16,7 @@ const Projects = () => {
                 <Typography variant="h2" className={classes.title}>PROJECTS</Typography>
                 <hr style={{ color: '#f0fdff', backgroundColor: '#f0fdff', height: 5, width: '5%' }}></hr>
             </Grid>
-            <Grid item xs={12} alignItems="center" justify="center" id="projects">
-
+            <Grid container item xs={12} alignItems="center" justify="center" id="projects">
                 <ProjectsTimeline />
             </Grid>
 
