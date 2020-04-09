@@ -1,7 +1,6 @@
 import React from "react";
 import HomeText from "../../components/HomeText/HomeText.jsx";
 import Buttonbase from "../../components/Buttonbase/Buttonbase.jsx";
-import Particles from "react-particles-js";
 import { useStyles } from "./Home.js";
 import { Grid } from "@material-ui/core";
 const Home = () => {

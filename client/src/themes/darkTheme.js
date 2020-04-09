@@ -46,7 +46,7 @@ const theme = createMuiTheme({
     //BODY
     body1: {
       fontFamily: 'Gotham Pro',
-      fontSize: 25
+      fontSize: 20
     },
     body2: {
       fontFamily: 'Gotham Pro',
@@ -78,7 +78,7 @@ const theme = createMuiTheme({
     h6: {
       fontFamily: 'Gotham Pro',
       fontWeight: 650,
-      fontSize: 25
+      fontSize: 20
     },
     textFields: {
       fontWeight: '400',

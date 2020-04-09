@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useStyles, getSteps, getStepTitle, getStepContent, getGithubLink } from './ProjectsTimeline.js';
+import React from 'react';
+import { useStyles } from './ProjectsTimeline.js';
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
@@ -8,24 +8,12 @@ import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
+import Link from '@material-ui/core/Link';
 
-const ProjectsTimeline = () => {
+const ProjectsTimeline = ({ activeStep, steps, handleNext, handleBack, handleReset, title, content, githubLink }) => {
     const classes = useStyles();
-    const [activeStep, setActiveStep] = useState(0);
-    const steps = getSteps();
 
-    const handleNext = () => {
-        setActiveStep((prevActiveStep) => prevActiveStep + 1);
-    };
-
-    const handleBack = () => {
-        setActiveStep((prevActiveStep) => prevActiveStep - 1);
-    };
-
-    const handleReset = () => {
-        setActiveStep(0);
-    };
 
 
     return (
@@ -36,9 +24,9 @@ const ProjectsTimeline = () => {
                     <Step key={label}>
                         <StepLabel>{label}</StepLabel>
                         <StepContent>
-                            <Typography variant="h5">{getStepTitle(index)}</Typography>
-                            <Typography variant="body1">{getStepContent(index)}</Typography>
-                            <Typography variant="body2">Github link: {getGithubLink(index) === 'Not applicable' ? 'Not applicable' : <Link variant="body2" href={getGithubLink(index)}>{getGithubLink(index)}</Link>}
+                            <Typography variant="h5">{title}</Typography>
+                            <Typography variant="body1">{content}</Typography>
+                            <Typography variant="body2">Github link: {githubLink === 'Not applicable' ? 'Not applicable' : <Link variant="body2" target="_blank" href={githubLink}>{githubLink}</Link>}
                             </Typography>
                             <div className={classes.actionsContainer}>
                                 <div>
@@ -66,8 +54,7 @@ const ProjectsTimeline = () => {
             {activeStep === steps.length && (
                 <Paper square elevation={0} className={classes.resetContainer}>
                     <Typography>Thats most of the projects I've been involved with!</Typography>
-                    {/* eslint-disable-next-line no-console */}
-                    <Link
+                    <ScrollLink
                         activeClass="active"
                         to="contact"
                         spy={true}
@@ -80,7 +67,7 @@ const ProjectsTimeline = () => {
                             className={classes.button}>
                             Contact me
                         </Button>
-                    </Link>
+                    </ScrollLink>
                     <Button
                         variant="contained"
                         className={classes.button}

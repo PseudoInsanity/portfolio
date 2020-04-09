@@ -26,6 +26,7 @@ const About = () => {
             </Typography>
                 <hr
                     style={{
+                        noshade: "true",
                         color: "#242325",
                         backgroundColor: "#242325",
                         height: 5,

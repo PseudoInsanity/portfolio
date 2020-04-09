@@ -12,13 +12,13 @@ const Skills = () => {
 
     return (
         <Paper elevation={1} className={classes.paper}>
-            <Grid container item xs justify="center" direction="row">
+            <Grid container item xs justify="center">
                 <Fade>
                     <Typography className={classes.title} variant="h3">Skills</Typography>
                 </Fade>
             </Grid>
             <List >
-                <Grid justify="center" alignItems="center" container item xs={12} spacing={3}>
+                <Grid justify="center" alignItems="center" container item xs={12} >
                     {skills.map((skill, index) =>
                         <ListItem key={index} >
                             <Grid item xs={3}>
@@ -26,7 +26,7 @@ const Skills = () => {
                             </Grid>
                             <Grid container item xs={7} justify="center" alignItems="center">
                                 <BorderLinearProgress
-                                    style={{ marginBottom: '20px', marginTop: '20px'}}
+                                    style={{ marginBottom: '20px', marginTop: '10px'}}
                                     variant="determinate"
                                     color="secondary"
                                     value={skill.level} />
