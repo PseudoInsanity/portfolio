@@ -13,9 +13,9 @@ const Contact = () => {
         <div className={classes.background} id="contact">
             <Grid direction="column" container item xs={12} justify="center" alignItems="center" className={classes.rootGrid}>
                 <Typography className={classes.title} variant="h1">Contact me</Typography>
-                <hr noshade="true" style={{ color: '#04c960', backgroundColor: '#04c960', height: 5, width: '15%' }}></hr>
+                <hr noshade="true" style={{ color: '#6699A3', backgroundColor: '#6699A3', height: 5, width: '15%' }}></hr>
                 <ContactForm />
-                <hr noshade="true" style={{ color: '#04c960', backgroundColor: '#04c960', height: 5, width: '90%', marginTop: '50px' }}></hr>
+                <hr noshade="true" style={{ color: '#6699A3', backgroundColor: '#6699A3', height: 5, width: '90%', marginTop: '50px' }}></hr>
                 <ContactAvatars />
             </Grid>
         </div>

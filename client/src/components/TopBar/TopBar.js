@@ -3,7 +3,7 @@ import makeStyles from '@material-ui/core/styles/makeStyles';
 const useStyles = makeStyles((theme) => ({
     root: {
         backgroundColor: theme.palette.primary.main,
-        borderBottom: '3px solid #04c960',
+        borderBottom: '3px solid #6699A3',
         '& > *': {
             display: 'flex',
             alignContent: 'space-evenly',

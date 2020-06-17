@@ -1,5 +1,5 @@
 import makeStyles from "@material-ui/core/styles/makeStyles";
-import Image from "../../img/flower_background.jpg";
+import Image from "../../img/road_background.jpg";
 
 const useStyles = makeStyles(theme => ({
     background: {

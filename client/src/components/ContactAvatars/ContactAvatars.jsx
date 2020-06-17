@@ -19,19 +19,19 @@ const ContactAvatars = () => {
             <Grid direction="row" item xs={12} container justify="center" alignItems="flex-end" className={classes.grid}>
                 <Zoom bottom cascade>
                     <IconButton style={{ width: '60px', height: '60px', margin: '10px' }} href="https://github.com/PseudoInsanity" target="_blank" color="inherit">
-                        <Avatar style={{ width: '60px', height: '60px', backgroundColor: '#46af49' }} className={classes.avatar}>
+                        <Avatar style={{ width: '60px', height: '60px', backgroundColor: '#6699A3' }} className={classes.avatar}>
                             <GitHubIcon style={{ width: '40px', height: '40px' }} />
                         </Avatar>
                     </IconButton>
 
                     <IconButton style={{ width: '60px', height: '60px', margin: '10px' }} href="https://www.linkedin.com/in/edmir-suljic-189860140/" target="_blank" color="inherit">
-                        <Avatar style={{ width: '60px', height: '60px', backgroundColor: '#46af49' }} className={classes.avatar}>
+                        <Avatar style={{ width: '60px', height: '60px', backgroundColor: '#6699A3' }} className={classes.avatar}>
                             <LinkedInIcon style={{ width: '40px', height: '40px' }} />
                         </Avatar>
                     </IconButton>
 
                     <IconButton style={{ width: '60px', height: '60px', margin: '10px' }} href="https://www.instagram.com/edmirsuljic/" target="_blank" color="inherit">
-                        <Avatar style={{ width: '60px', height: '60px', backgroundColor: '#46af49' }} className={classes.avatar}>
+                        <Avatar style={{ width: '60px', height: '60px', backgroundColor: '#6699A3' }} className={classes.avatar}>
                             <InstagramIcon style={{ width: '40px', height: '40px' }} />
                         </Avatar>
                     </IconButton>
