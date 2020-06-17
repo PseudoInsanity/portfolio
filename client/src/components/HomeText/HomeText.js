@@ -5,8 +5,7 @@ const useStyles = makeStyles(theme => ({
     margin: theme.spacing(3)
   },
   text: {
-    color: theme.palette.primary.light,
-    padding: theme.spacing(1)
+    color: theme.palette.primary.light
   },
   root: {
     display: "flex",

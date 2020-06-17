@@ -8,6 +8,7 @@ const useStyles =  makeStyles((theme) => ({
     },
     background: {
         minHeight: '100vh',
+        minWidth: '100%',
         backgroundColor: theme.palette.primary.main
     }
 }));

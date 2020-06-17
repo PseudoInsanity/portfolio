@@ -1,23 +1,26 @@
 import makeStyles from '@material-ui/core/styles/makeStyles';
 
-
 const useStyles = makeStyles((theme) => ({
-    paper: {
-        '&.MuiPaper-root': {
-            backgroundColor: theme.palette.primary.main,
-        },
-        color: theme.palette.primary.light,
-        height: '650px',
-        width: '65%',
-        "@media (max-width: 600px)": {
-            width: "100%",
-        }
+    root: {
+        maxWidth: 550,
+        backgroundColor: theme.palette.primary.main
     },
-    grid: {
-        margin: theme.spacing(3),
-        
+    media: {
+        height: 0,
+        paddingTop: '56.25%', // 16:9
     },
-
+    expand: {
+        transform: 'rotate(0deg)',
+        marginLeft: 'auto',
+        transition: theme.transitions.create('transform', {
+            duration: theme.transitions.duration.shortest,
+        }),
+    },
+    expandOpen: {
+        transform: 'rotate(180deg)',
+    },
+    avatar: {
+    },
 }));
 
 export { useStyles };

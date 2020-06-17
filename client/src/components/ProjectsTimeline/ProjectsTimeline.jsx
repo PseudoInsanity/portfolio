@@ -18,7 +18,6 @@ const ProjectsTimeline = ({ activeStep, steps, handleNext, handleBack, handleRes
 
     return (
         <Grid className={classes.root} item xs={12}>
-
             <Stepper className={classes.root} activeStep={activeStep} orientation="vertical">
                 {steps.map((label, index) => (
                     <Step key={label}>

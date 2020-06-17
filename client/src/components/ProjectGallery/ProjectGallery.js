@@ -1,7 +1,4 @@
 import { makeStyles } from '@material-ui/core/styles';
-import eppnList from '../../img/gallery/eppn_list.png'
-import eppnStartPage from '../../img/gallery/eppn_startpage.png';
-import magicMirror from '../../img/gallery/magic_mirror.jpeg';
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -20,29 +17,11 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     gridList: {
-        width: 600,
-        height: 550,
+        width: 500,
+        height: 300,
         transform: 'translateZ(0)',
     },
 }));
 
 
-const tileData = [
-    {
-        img: eppnStartPage,
-        title: 'EPPN Splashscreen',
-        featured: false
-    },
-    {
-        img: eppnList,
-        title: 'EPPN StartPage',
-        featured: false
-    },
-    {
-        img: magicMirror,
-        title: 'Magic Mirror',
-        featured: false
-    }
-]
-
-export { useStyles, tileData };
+export { useStyles };

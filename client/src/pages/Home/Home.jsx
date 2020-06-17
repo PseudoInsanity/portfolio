@@ -3,8 +3,10 @@ import HomeText from "../../components/HomeText/HomeText.jsx";
 import Buttonbase from "../../components/Buttonbase/Buttonbase.jsx";
 import { useStyles } from "./Home.js";
 import { Grid } from "@material-ui/core";
+
 const Home = () => {
   const classes = useStyles();
+
   return (
     <Grid
       item
@@ -21,4 +23,5 @@ const Home = () => {
     </Grid>
   );
 };
+
 export default Home;

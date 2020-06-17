@@ -1,27 +1,63 @@
 import React from 'react';
-import { useStyles } from './ProjectDescription.js';
-import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
+import clsx from 'clsx';
+import Card from '@material-ui/core/Card';
+import CardHeader from '@material-ui/core/CardHeader';
+import CardContent from '@material-ui/core/CardContent';
+import CardActions from '@material-ui/core/CardActions';
+import Collapse from '@material-ui/core/Collapse';
+import Avatar from '@material-ui/core/Avatar';
+import IconButton from '@material-ui/core/IconButton';
+import { useStyles } from './ProjectDescription';
 import Typography from '@material-ui/core/Typography';
-import Zoom from 'react-reveal';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ProjectGallery from '../ProjectGallery/ProjectGallery.jsx';
+import Slide from '@material-ui/core/Slide';
+import esLogo from '../../img/es_logo.png'
 
-
-
-const ProjectDescription = ({ activestep, title, description }) => {
+const ProjectDescription = ({ logo, title, description, date, image }) => {
     const classes = useStyles();
+    const [expanded, setExpanded] = React.useState(false);
+
+    const handleExpandClick = () => {
+        setExpanded(!expanded);
+    };
 
     return (
-        <Paper elevation={1} className={classes.paper}>
-            <Grid container item justify="center" className={classes.grid} xs={12}>
-                <Typography variant="h5">{title}</Typography>
-            </Grid>
-            <Zoom bottom cascade>
-                <Grid justify="center" alignItems="center" container item xs={12}  >
-                    <Typography style={{margin: '10px'}} variant="body1">{description}</Typography>
-                </Grid>
-            </Zoom>
-        </Paper>
-
+        <Slide direction="up" in={true} mountOnEnter unmountOnExit>
+            <Card className={classes.root}>
+                <CardHeader
+                    avatar={
+                        logo ? <Avatar src={logo} aria-label="logo" /> 
+                        : <Avatar src={esLogo} aria-label="logo" />
+                    }
+                    title={title}
+                    subheader={date}
+                />
+                <CardContent>
+                    <Typography variant="body2" color="textSecondary" component="p">
+                        {description}
+                    </Typography>
+                </CardContent>
+                <CardActions disableSpacing>
+                    <IconButton
+                        className={clsx(classes.expand, {
+                            [classes.expandOpen]: expanded && image.length,
+                        })}
+                        onClick={handleExpandClick}
+                        aria-expanded={expanded}
+                        disabled={!image.length}
+                        aria-label="show more"
+                    >
+                        <ExpandMoreIcon />
+                    </IconButton>
+                </CardActions>
+                <Collapse in={expanded && image.length} timeout="auto" unmountOnExit>
+                    <CardContent>
+                        <ProjectGallery image={image} />
+                    </CardContent>
+                </Collapse>
+            </Card>
+        </Slide>
     );
 }
 

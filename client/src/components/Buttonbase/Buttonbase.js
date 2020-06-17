@@ -5,7 +5,7 @@ const useStyles = makeStyles((theme) => ({
         position: 'relative',
         height: 400,
         [theme.breakpoints.down('xs')]: {
-          width: '100% !important', // Overrides inline-style
+          width: '50% !important', // Overrides inline-style
           height: 100,
         },
         '&:hover, &$focusVisible': {

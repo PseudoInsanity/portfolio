@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import { useStyles } from './TopBar.js';
 import { Typography, Button } from '@material-ui/core';
 import { Link } from 'react-scroll';
+import PdfModal from '../PdfModal/PdfModal.jsx';
 
 
 export const TopBar = (props) => {
     const classes = useStyles();
+    const [open, setOpen] = useState(false);
+
+
+    const handleClick = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
 
     return (
 
@@ -38,8 +49,12 @@ export const TopBar = (props) => {
                     smooth={true}
                     offset={0}
                     duration={500}>
-                <Button><Typography variant="body2">Contact me</Typography></Button>
+                <Button><Typography variant="body2">Contact</Typography></Button>
                 </Link>
+
+                <Button onClick={handleClick}> <Typography variant="body2">CV</Typography> </Button>
+
+                <PdfModal open={open} handleClose={handleClose} />
             </Toolbar>
         </AppBar>
     )
