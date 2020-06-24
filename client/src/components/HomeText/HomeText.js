@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
   box: {
     height: '100%',
     '@media (min-width: 700px)': {
-      width: '30%',
+      width: '50%',
       height: '100%'
     }
   }

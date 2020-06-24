@@ -5,11 +5,11 @@ const theme = createMuiTheme({
   palette: {
     type: 'dark',
     primary: {
-      main: '#242325', 
+      main: '#3a5867', 
       light: '#f0fdff', 
     },
     secondary: {
-      main: '#2D3047', 
+      main: '#1e2b38', 
       light: '#93B7BE', 
     },
     paper: {

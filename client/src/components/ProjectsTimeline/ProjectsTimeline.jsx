@@ -25,7 +25,7 @@ const ProjectsTimeline = ({ activeStep, steps, handleNext, handleBack, handleRes
                         <StepContent>
                             <Typography variant="h5">{title}</Typography>
                             <Typography variant="body1">{content}</Typography>
-                            <Typography variant="body2">Github link: {githubLink === 'Not applicable' ? 'Not applicable' : <Link variant="body2" target="_blank" href={githubLink}>{githubLink}</Link>}
+                            <Typography variant="body2">Github link: {githubLink === 'Not applicable' ? 'Not applicable' : <Link variant="body2" color="textSecondary" target="_blank" href={githubLink}>{githubLink}</Link>}
                             </Typography>
                             <div className={classes.actionsContainer}>
                                 <div>

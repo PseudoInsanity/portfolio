@@ -3,7 +3,7 @@ import makeStyles from '@material-ui/core/styles/makeStyles';
 const useStyles = makeStyles((theme) => ({
     avatar: {
         margin: theme.spacing(5),
-        backgroundColor: theme.palette.secondary.main
+        backgroundColor: theme.palette.primary.main
     },
     avatarTitle: {
         color: theme.palette.primary.main

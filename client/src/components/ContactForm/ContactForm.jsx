@@ -71,6 +71,7 @@ const ContactForm = () => {
                     type="submit"
                     variant="contained"
                     color="secondary"
+                    size="large"
                     className={classes.button}
                 >
                     Send email

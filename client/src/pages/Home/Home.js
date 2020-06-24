@@ -4,7 +4,7 @@ import Image from "../../img/road_background.jpg";
 const useStyles = makeStyles(theme => ({
     background: {
         background: `url(${Image})`,
-        backgroundSize: "100%",
+        minHeight: '100vh',
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",

@@ -6,12 +6,12 @@ const useStyles = makeStyles((theme) => ({
     paper: {
         backgroundColor: theme.palette.secondary.main,
         '&.MuiPaper-root': {
-            backgroundColor: theme.palette.secondary.main,
+            backgroundColor: theme.palette.primary.main,
         },
         color: theme.palette.primary.light,
         height: '650px',
         width: '65%',
-        "@media (max-width: 600px)": {
+        "@media (max-width: 700px)": {
             width: "100%",
         }
     },
@@ -49,11 +49,11 @@ const BorderLinearProgress = withStyles((theme) => ({
 const skills = [
     { type: "Java", level: 90 },
     { type: "HTML", level: 65 },
-    { type: "CSS", level: 45 },
     { type: "JS", level: 50 },
     { type: "React", level: 40 },
     { type: "Git", level: 65 },
-    { type: "Android", level: 70 },
+    { type: "AWS", level: 40 },
+    { type: "Azure", level: 40 },
     { type: "Arduino", level: 45 },
 ];
 
